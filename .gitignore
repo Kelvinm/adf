@@ -1,0 +1,417 @@
+# ADF (Agentic Development Framework) .gitignore
+
+# ===========================================
+# Operating System Files
+# ===========================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# IDE and Editor Files
+# ===========================================
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Vim
+*.swp
+*.swo
+.vim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# Node.js / Frontend (Vue.js, TypeScript)
+# ===========================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite
+dist/
+dist-ssr/
+*.local
+
+# Vitest
+coverage/
+
+# ===========================================
+# Python / Backend (FastAPI, SQLModel)
+# ===========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (if used):
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff (if used):
+instance/
+.webassets-cache
+
+# Scrapy stuff (if used):
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# UV (Python package manager)
+.uv/
+uv.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ===========================================
+# Database Files
+# ===========================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# PostgreSQL
+*.dump
+*.sql
+
+# Database migration files (be selective)
+# Uncomment if you want to ignore specific migration files
+# alembic/versions/*.py
+
+# ===========================================
+# Docker & Container Files
+# ===========================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# ===========================================
+# Environment & Configuration Files
+# ===========================================
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# Configuration files with secrets
+config.local.json
+secrets.json
+.secrets/
+
+# ===========================================
+# Build & Compilation Output
+# ===========================================
+
+# Build directories
+build/
+dist/
+out/
+target/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ===========================================
+# Logs & Temporary Files
+# ===========================================
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===========================================
+# AI & Development Tools
+# ===========================================
+
+# AI model files (if storing models locally)
+*.model
+*.pkl
+*.pickle
+models/
+checkpoints/
+
+# Memory files for context tools
+.memory/
+.context/
+
+# MCP server data
+.mcp/
+
+# ===========================================
+# Testing & Coverage
+# ===========================================
+
+# Test results
+test-results/
+junit.xml
+
+# Coverage reports
+coverage/
+.coverage
+htmlcov/
+.nyc_output/
+
+# ===========================================
+# Monorepo Specific
+# ===========================================
+
+# Package manager workspaces
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Turborepo
+.turbo/
+
+# Rush
+common/temp/
+
+# Lerna
+lerna-debug.log*
+
+# ===========================================
+# Backup & Archive Files
+# ===========================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.tmp
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================================
+# Custom Project Files
+# ===========================================
+
+# Add any project-specific files to ignore below
+# Example:
+# /specific-config-file.json
+# /custom-output-directory/
